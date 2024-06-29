@@ -2,19 +2,27 @@ import logo from './logo.svg';
 import './App.css';
 import { useState } from "react";
 
+// import Greeting from './Components/Greeting';
+
+import { Greeting, Ching } from './Components/Greeting';
+import componentClass from './Components/ClassCompo';
+
 
 function App() {
 
-  const [count, setCount] = useState(0);
+  // const [count, setCount] = useState(0);
 
-  const [toggle, setToggle] = useState(true);
+  // const [toggle, setToggle] = useState(true);
 
-  const [text, getText] = useState("");
+  // const [text, getText] = useState("");
 
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+
+        <componentClass />
+
+        {/* <img src={logo} className="App-logo" alt="logo" />
     
         <input value={text} placeholder='Type Something' onChange={(event)=> getText(event.target.value)}></input>
         <p>Text : {text}</p>
@@ -25,8 +33,10 @@ function App() {
         <p>Count is : {count}</p>
         <button onClick={()=>setCount(count+1)}>Increase</button> <br/>
         <button onClick={()=>setCount(count-1)}>Decrease</button> <br/>
-        <button onClick={()=>setCount(0)}>Reset</button>
+        <button onClick={()=>setCount(0)}>Reset</button> */}
 
+        <Greeting />
+        <Ching name='Jayesh' />
 
       </header>
     </div>
