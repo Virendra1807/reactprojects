@@ -1,22 +1,33 @@
 import logo from './logo.svg';
 import './App.css';
+import { useState } from "react";
+
 
 function App() {
+
+  const [count, setCount] = useState(0);
+
+  const [toggle, setToggle] = useState(true);
+
+  const [text, getText] = useState("");
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src="https://i.pinimg.com/originals/93/c3/ab/93c3abca365491534272af92fc86d5d0.png" className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React with Viren Mali
-        </a>
+        <img src={logo} className="App-logo" alt="logo" />
+    
+        <input value={text} placeholder='Type Something' onChange={(event)=> getText(event.target.value)}></input>
+        <p>Text : {text}</p>
+
+        <h2>Toggle Button</h2>
+        <button onClick={()=> setToggle(!toggle)}>{toggle ? 'On' : 'Off'}</button>
+
+        <p>Count is : {count}</p>
+        <button onClick={()=>setCount(count+1)}>Increase</button> <br/>
+        <button onClick={()=>setCount(count-1)}>Decrease</button> <br/>
+        <button onClick={()=>setCount(0)}>Reset</button>
+
+
       </header>
     </div>
   );
