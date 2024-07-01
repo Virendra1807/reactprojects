@@ -7,6 +7,8 @@ import { useState } from "react";
 import { Greeting, Ching } from './Components/Greeting';
 import componentClass from './Components/ClassCompo';
 
+import CountriesList from './Components/Country';
+
 
 function App() {
 
@@ -20,7 +22,9 @@ function App() {
     <div className="App">
       <header className="App-header">
 
-        <componentClass />
+        <CountriesList />
+
+        {/* <componentClass /> */}
 
         {/* <img src={logo} className="App-logo" alt="logo" />
     
@@ -35,8 +39,8 @@ function App() {
         <button onClick={()=>setCount(count-1)}>Decrease</button> <br/>
         <button onClick={()=>setCount(0)}>Reset</button> */}
 
-        <Greeting />
-        <Ching name='Jayesh' />
+        {/* <Greeting />
+        <Ching name='Jayesh' /> */}
 
       </header>
     </div>
