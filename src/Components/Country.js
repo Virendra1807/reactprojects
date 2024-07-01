@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 
 const Countries = [
@@ -9,12 +9,16 @@ const Countries = [
 ]
 
 
+
 function CountriesList(){
+    let [color, setColor] = useState("skyblue");
     return(
-        <div>
+        <div style={{backgroundColor : color}}>
             {Countries.map((country)=>(
-                <h4>{country.Name} -->{country.Capital}</h4>
+                <h4>{country.Name} -- {country.Capital}</h4>
             ))}
+
+            <button onClick={()=> setColor(color !=' blue' ? 'blue' : 'red' )}>Click</button>
         </div>
     )
 }
