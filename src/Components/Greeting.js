@@ -9,7 +9,7 @@ function Greeting(){
 
 // We can Pass Default values 
 Ching.defaultProps = {
-    name : "default"
+    name : "Viren"
 }
 
 function Ching(props){
