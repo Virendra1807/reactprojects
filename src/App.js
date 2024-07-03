@@ -24,7 +24,7 @@ function App() {
       
         <CountriesList />
 
-        {/* <componentClass /> */}
+        <componentClass />
 
         {/* <img src={logo} className="App-logo" alt="logo" />
     

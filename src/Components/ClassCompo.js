@@ -2,9 +2,9 @@ import React from 'react'
 
 import { Component } from 'react';
 
-class componentClass extends React.Component {
+class componentClass extends Component {
     render(){
-        return <h5>Hello from Class Component</h5>
+        return <h5>Hello from Class Component</h5>;
     }
 }
 

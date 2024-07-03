@@ -13,6 +13,7 @@ const Countries = [
 function CountriesList(){
     let [color, setColor] = useState(true);
     let [color2, setColor2] = useState('skyblue');
+
     return(
         <div style={{backgroundColor : color2, padding: '50px', borderRadius: '20px'}}>
             {Countries.map((country)=>(
@@ -20,7 +21,7 @@ function CountriesList(){
             ))}
 
             <button onClick={()=>setColor(() => !color ? setColor2('green') : setColor2('violet'))}>Click</button>
-
+            
         </div>
     )
 }
