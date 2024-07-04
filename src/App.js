@@ -1,13 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
-import { useState } from "react";
+// import { useState } from "react";
 
-// import Greeting from './Components/Greeting';
+// import { Greeting, Ching } from './Components/Greeting';
+// import componentClass from './Components/ClassCompo';
 
-import { Greeting, Ching } from './Components/Greeting';
-import componentClass from './Components/ClassCompo';
-
-import CountriesList from './Components/Country';
+// import CountriesList from './Components/Country';
+import Footer from './Components/Footer';
 
 
 function App() {
@@ -22,9 +20,11 @@ function App() {
     <div className="App">
       <header className="App-header">
       
-        <CountriesList />
+        <Footer />
 
-        <componentClass />
+        {/* <CountriesList />
+
+        <componentClass /> */}
 
         {/* <img src={logo} className="App-logo" alt="logo" />
     
