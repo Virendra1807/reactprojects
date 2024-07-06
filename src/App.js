@@ -1,26 +1,24 @@
 import './App.css';
+import LifecycleComponent from './Components/LifecycleComponent';
 // import { useState } from "react";
-
 // import { Greeting, Ching } from './Components/Greeting';
 // import componentClass from './Components/ClassCompo';
-
 // import CountriesList from './Components/Country';
-import Footer from './Components/Footer';
+// import Footer from './Components/Footer';
 
 
 function App() {
-
   // const [count, setCount] = useState(0);
-
   // const [toggle, setToggle] = useState(true);
-
   // const [text, getText] = useState("");
 
   return (
     <div className="App">
       <header className="App-header">
-      
-        <Footer />
+
+        <LifecycleComponent />
+
+        {/* <Footer /> */}
 
         {/* <CountriesList />
 
